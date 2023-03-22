@@ -45,6 +45,7 @@ namespace S.G_Padaria
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.btn_entrar = new Guna.UI.WinForms.GunaButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.btn_logar = new Guna.UI.WinForms.GunaButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@ namespace S.G_Padaria
             this.button1 = new System.Windows.Forms.Button();
             this.btn_Home = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnl_Home.SuspendLayout();
@@ -105,10 +105,10 @@ namespace S.G_Padaria
             this.pg_Paginas.Margin = new System.Windows.Forms.Padding(0);
             this.pg_Paginas.Multiline = true;
             this.pg_Paginas.Name = "pg_Paginas";
-            this.pg_Paginas.Page = this.pg_Inicio;
-            this.pg_Paginas.PageIndex = 0;
-            this.pg_Paginas.PageName = "pg_Inicio";
-            this.pg_Paginas.PageTitle = "Inicio";
+            this.pg_Paginas.Page = this.pg_Login;
+            this.pg_Paginas.PageIndex = 1;
+            this.pg_Paginas.PageName = "pg_Login";
+            this.pg_Paginas.PageTitle = "Login";
             this.pg_Paginas.SelectedIndex = 0;
             this.pg_Paginas.Size = new System.Drawing.Size(1071, 700);
             this.pg_Paginas.TabIndex = 1;
@@ -172,7 +172,7 @@ namespace S.G_Padaria
             // panel4
             // 
             this.panel4.AutoScroll = true;
-            this.panel4.BackgroundImage = global::S.G_Padaria.Properties.Resources.Captura_de_tela_2023_03_21_215000;
+            this.panel4.BackgroundImage = global::S.G_Padaria.Properties.Resources.primeira_tela;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.gunaControlBox1);
             this.panel4.Controls.Add(this.btn_entrar);
@@ -213,7 +213,7 @@ namespace S.G_Padaria
             this.btn_entrar.Image = global::S.G_Padaria.Properties.Resources.login_20px;
             this.btn_entrar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_entrar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_entrar.Location = new System.Drawing.Point(343, 295);
+            this.btn_entrar.Location = new System.Drawing.Point(290, 295);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btn_entrar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -242,6 +242,22 @@ namespace S.G_Padaria
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1057, 660);
             this.panel5.TabIndex = 0;
+            // 
+            // gunaControlBox2
+            // 
+            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox2.AnimationSpeed = 0.03F;
+            this.gunaControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaControlBox2.IconColor = System.Drawing.Color.White;
+            this.gunaControlBox2.IconSize = 259F;
+            this.gunaControlBox2.Location = new System.Drawing.Point(1000, -7);
+            this.gunaControlBox2.Name = "gunaControlBox2";
+            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.Transparent;
+            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox2.Size = new System.Drawing.Size(64, 70);
+            this.gunaControlBox2.TabIndex = 5;
             // 
             // btn_logar
             // 
@@ -366,22 +382,6 @@ namespace S.G_Padaria
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // gunaControlBox2
-            // 
-            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox2.AnimationSpeed = 0.03F;
-            this.gunaControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaControlBox2.IconColor = System.Drawing.Color.White;
-            this.gunaControlBox2.IconSize = 259F;
-            this.gunaControlBox2.Location = new System.Drawing.Point(1000, -7);
-            this.gunaControlBox2.Name = "gunaControlBox2";
-            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.Transparent;
-            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox2.Size = new System.Drawing.Size(64, 70);
-            this.gunaControlBox2.TabIndex = 5;
             // 
             // frm_Principal
             // 

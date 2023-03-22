@@ -293,6 +293,16 @@ namespace S.G_Padaria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap primeira_tela {
+            get {
+                object obj = ResourceManager.GetObject("primeira tela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sell_Stock_30px {
             get {
                 object obj = ResourceManager.GetObject("Sell Stock_30px", resourceCulture);
