@@ -243,9 +243,29 @@ namespace S.G_Padaria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap initial_Page {
+            get {
+                object obj = ResourceManager.GetObject("initial Page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_20px {
             get {
                 object obj = ResourceManager.GetObject("login_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login_Page {
+            get {
+                object obj = ResourceManager.GetObject("Login Page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +293,16 @@ namespace S.G_Padaria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mega_creator {
+            get {
+                object obj = ResourceManager.GetObject("mega-creator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap menu_30px {
             get {
                 object obj = ResourceManager.GetObject("menu_30px", resourceCulture);
@@ -286,6 +316,16 @@ namespace S.G_Padaria.Properties {
         internal static System.Drawing.Bitmap menu_40px {
             get {
                 object obj = ResourceManager.GetObject("menu_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mohamed_hassouna_N4gtuEZ5gWc_unsplash__1_ {
+            get {
+                object obj = ResourceManager.GetObject("mohamed-hassouna-N4gtuEZ5gWc-unsplash (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +376,16 @@ namespace S.G_Padaria.Properties {
         internal static System.Drawing.Bitmap Sell_Stock_50px {
             get {
                 object obj = ResourceManager.GetObject("Sell Stock_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tels_login {
+            get {
+                object obj = ResourceManager.GetObject("tels login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

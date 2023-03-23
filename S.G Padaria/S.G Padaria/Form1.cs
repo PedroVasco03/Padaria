@@ -18,16 +18,7 @@ namespace S.G_Padaria
             InitializeComponent();
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
-        {
-            pg_Paginas.Page = pg_Inicio;
-        }
         conexao conex = new conexao();
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pg_Paginas.Page = pg_Login;
-        }
 
         private void btn_logar_Click(object sender, EventArgs e)
         {
@@ -69,6 +60,26 @@ namespace S.G_Padaria
         private void btn_entrar_Click(object sender, EventArgs e)
         {
             pg_Paginas.Page = pg_Login;
+        }
+
+        private void lbl_recuperarSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pg_LoginPaginas.Page = pg_recuperar;
+        }
+
+        private void lbl_cadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pg_LoginPaginas.Page = pg_cadasro;
+        }
+
+        private void lbl_entrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pg_LoginPaginas.Page = pg_logado;
+        }
+
+        private void lbl_voltar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pg_LoginPaginas.Page = pg_logado;
         }
     }
 }

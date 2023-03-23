@@ -185,5 +185,20 @@
   <ItemGroup>
     <None Include="Resources\primeira tela.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tels login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mega-creator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\initial Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mohamed-hassouna-N4gtuEZ5gWc-unsplash %281%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
