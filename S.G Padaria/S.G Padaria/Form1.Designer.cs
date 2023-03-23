@@ -36,14 +36,11 @@ namespace S.G_Padaria
             this.pg_Paginas = new Bunifu.UI.WinForms.BunifuPages();
             this.pg_Login = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pg_LoginPaginas = new Bunifu.UI.WinForms.BunifuPages();
             this.pg_logado = new System.Windows.Forms.TabPage();
-            this.pg_cadasro = new System.Windows.Forms.TabPage();
             this.lbl_cadastro = new System.Windows.Forms.LinkLabel();
             this.lbl_recuperarSenha = new System.Windows.Forms.LinkLabel();
             this.btn_logar = new Guna.UI.WinForms.GunaButton();
@@ -54,7 +51,7 @@ namespace S.G_Padaria
             this.label1 = new System.Windows.Forms.Label();
             this.txt_SenhaADM = new Guna.UI.WinForms.GunaLineTextBox();
             this.txt_UsuarioADM = new Guna.UI.WinForms.GunaLineTextBox();
-            this.pg_recuperar = new System.Windows.Forms.TabPage();
+            this.pg_cadasro = new System.Windows.Forms.TabPage();
             this.lbl_entrar = new System.Windows.Forms.LinkLabel();
             this.btn_cadastrar = new Guna.UI.WinForms.GunaButton();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,6 +61,9 @@ namespace S.G_Padaria
             this.label10 = new System.Windows.Forms.Label();
             this.txt_senhaNEW = new Guna.UI.WinForms.GunaLineTextBox();
             this.txt_userNEW = new Guna.UI.WinForms.GunaLineTextBox();
+            this.pg_recuperar = new System.Windows.Forms.TabPage();
+            this.lbl_voltar = new System.Windows.Forms.LinkLabel();
+            this.label13 = new System.Windows.Forms.Label();
             this.btn_alterarSenha = new Guna.UI.WinForms.GunaButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -71,8 +71,8 @@ namespace S.G_Padaria
             this.label15 = new System.Windows.Forms.Label();
             this.txt_senha = new Guna.UI.WinForms.GunaLineTextBox();
             this.txt_usuario = new Guna.UI.WinForms.GunaLineTextBox();
-            this.lbl_voltar = new System.Windows.Forms.LinkLabel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pg_Paginas.SuspendLayout();
             this.pg_Login.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -140,9 +140,16 @@ namespace S.G_Padaria
             this.panel3.Size = new System.Drawing.Size(1286, 660);
             this.panel3.TabIndex = 0;
             // 
-            // gunaDragControl2
+            // panel1
             // 
-            this.gunaDragControl2.TargetControl = this.panel5;
+            this.panel1.BackgroundImage = global::S.G_Padaria.Properties.Resources.mohamed_hassouna_N4gtuEZ5gWc_unsplash__1_;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.gunaControlBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(601, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(685, 660);
+            this.panel1.TabIndex = 1;
             // 
             // gunaControlBox2
             // 
@@ -159,17 +166,6 @@ namespace S.G_Padaria
             this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaControlBox2.Size = new System.Drawing.Size(64, 70);
             this.gunaControlBox2.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::S.G_Padaria.Properties.Resources.mohamed_hassouna_N4gtuEZ5gWc_unsplash__1_;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.gunaControlBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(601, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(685, 660);
-            this.panel1.TabIndex = 1;
             // 
             // panel5
             // 
@@ -193,10 +189,10 @@ namespace S.G_Padaria
             this.pg_LoginPaginas.Location = new System.Drawing.Point(0, 0);
             this.pg_LoginPaginas.Multiline = true;
             this.pg_LoginPaginas.Name = "pg_LoginPaginas";
-            this.pg_LoginPaginas.Page = this.pg_recuperar;
-            this.pg_LoginPaginas.PageIndex = 2;
-            this.pg_LoginPaginas.PageName = "pg_recuperar";
-            this.pg_LoginPaginas.PageTitle = "Recuperar";
+            this.pg_LoginPaginas.Page = this.pg_logado;
+            this.pg_LoginPaginas.PageIndex = 0;
+            this.pg_LoginPaginas.PageName = "pg_logado";
+            this.pg_LoginPaginas.PageTitle = "Logando";
             this.pg_LoginPaginas.SelectedIndex = 0;
             this.pg_LoginPaginas.Size = new System.Drawing.Size(609, 660);
             this.pg_LoginPaginas.TabIndex = 0;
@@ -208,7 +204,7 @@ namespace S.G_Padaria
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -238,36 +234,17 @@ namespace S.G_Padaria
             this.pg_logado.TabIndex = 0;
             this.pg_logado.Text = "Logando";
             // 
-            // pg_cadasro
-            // 
-            this.pg_cadasro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.pg_cadasro.Controls.Add(this.lbl_entrar);
-            this.pg_cadasro.Controls.Add(this.btn_cadastrar);
-            this.pg_cadasro.Controls.Add(this.label6);
-            this.pg_cadasro.Controls.Add(this.label7);
-            this.pg_cadasro.Controls.Add(this.label8);
-            this.pg_cadasro.Controls.Add(this.label9);
-            this.pg_cadasro.Controls.Add(this.label10);
-            this.pg_cadasro.Controls.Add(this.txt_senhaNEW);
-            this.pg_cadasro.Controls.Add(this.txt_userNEW);
-            this.pg_cadasro.Location = new System.Drawing.Point(4, 4);
-            this.pg_cadasro.Name = "pg_cadasro";
-            this.pg_cadasro.Padding = new System.Windows.Forms.Padding(3);
-            this.pg_cadasro.Size = new System.Drawing.Size(601, 626);
-            this.pg_cadasro.TabIndex = 1;
-            this.pg_cadasro.Text = "Cadastrando";
-            // 
             // lbl_cadastro
             // 
             this.lbl_cadastro.ActiveLinkColor = System.Drawing.Color.Black;
             this.lbl_cadastro.AutoSize = true;
             this.lbl_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_cadastro.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.lbl_cadastro.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.lbl_cadastro.Location = new System.Drawing.Point(280, 544);
             this.lbl_cadastro.Name = "lbl_cadastro";
             this.lbl_cadastro.Size = new System.Drawing.Size(109, 23);
-            this.lbl_cadastro.TabIndex = 12;
+            this.lbl_cadastro.TabIndex = 4;
             this.lbl_cadastro.TabStop = true;
             this.lbl_cadastro.Text = "Cadastrar-se";
             this.lbl_cadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_cadastro_LinkClicked);
@@ -281,7 +258,7 @@ namespace S.G_Padaria
             this.lbl_recuperarSenha.Location = new System.Drawing.Point(329, 375);
             this.lbl_recuperarSenha.Name = "lbl_recuperarSenha";
             this.lbl_recuperarSenha.Size = new System.Drawing.Size(151, 21);
-            this.lbl_recuperarSenha.TabIndex = 13;
+            this.lbl_recuperarSenha.TabIndex = 2;
             this.lbl_recuperarSenha.TabStop = true;
             this.lbl_recuperarSenha.Text = "Esqueceu a senha?";
             this.lbl_recuperarSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_recuperarSenha_LinkClicked);
@@ -291,7 +268,7 @@ namespace S.G_Padaria
             this.btn_logar.AnimationHoverSpeed = 0.07F;
             this.btn_logar.AnimationSpeed = 0.03F;
             this.btn_logar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_logar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.btn_logar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.btn_logar.BorderColor = System.Drawing.Color.Black;
             this.btn_logar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_logar.FocusedColor = System.Drawing.Color.Empty;
@@ -306,12 +283,13 @@ namespace S.G_Padaria
             this.btn_logar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_logar.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_logar.OnHoverImage = null;
-            this.btn_logar.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.btn_logar.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.btn_logar.Radius = 10;
             this.btn_logar.Size = new System.Drawing.Size(160, 53);
-            this.btn_logar.TabIndex = 11;
+            this.btn_logar.TabIndex = 3;
             this.btn_logar.Text = "Logar";
             this.btn_logar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_logar.Click += new System.EventHandler(this.btn_logar_Click);
             // 
             // label2
             // 
@@ -367,7 +345,7 @@ namespace S.G_Padaria
             // 
             this.txt_SenhaADM.BackColor = System.Drawing.Color.White;
             this.txt_SenhaADM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_SenhaADM.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_SenhaADM.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_SenhaADM.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SenhaADM.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_SenhaADM.Location = new System.Drawing.Point(129, 294);
@@ -375,14 +353,14 @@ namespace S.G_Padaria
             this.txt_SenhaADM.PasswordChar = '●';
             this.txt_SenhaADM.SelectedText = "";
             this.txt_SenhaADM.Size = new System.Drawing.Size(289, 39);
-            this.txt_SenhaADM.TabIndex = 4;
+            this.txt_SenhaADM.TabIndex = 1;
             this.txt_SenhaADM.UseSystemPasswordChar = true;
             // 
             // txt_UsuarioADM
             // 
             this.txt_UsuarioADM.BackColor = System.Drawing.Color.White;
             this.txt_UsuarioADM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_UsuarioADM.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_UsuarioADM.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_UsuarioADM.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_UsuarioADM.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_UsuarioADM.Location = new System.Drawing.Point(129, 209);
@@ -390,37 +368,39 @@ namespace S.G_Padaria
             this.txt_UsuarioADM.PasswordChar = '\0';
             this.txt_UsuarioADM.SelectedText = "";
             this.txt_UsuarioADM.Size = new System.Drawing.Size(289, 39);
-            this.txt_UsuarioADM.TabIndex = 5;
+            this.txt_UsuarioADM.TabIndex = 0;
             // 
-            // pg_recuperar
+            // pg_cadasro
             // 
-            this.pg_recuperar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.pg_recuperar.Controls.Add(this.lbl_voltar);
-            this.pg_recuperar.Controls.Add(this.label13);
-            this.pg_recuperar.Controls.Add(this.btn_alterarSenha);
-            this.pg_recuperar.Controls.Add(this.label11);
-            this.pg_recuperar.Controls.Add(this.label12);
-            this.pg_recuperar.Controls.Add(this.label14);
-            this.pg_recuperar.Controls.Add(this.label15);
-            this.pg_recuperar.Controls.Add(this.txt_senha);
-            this.pg_recuperar.Controls.Add(this.txt_usuario);
-            this.pg_recuperar.Location = new System.Drawing.Point(4, 4);
-            this.pg_recuperar.Name = "pg_recuperar";
-            this.pg_recuperar.Size = new System.Drawing.Size(601, 626);
-            this.pg_recuperar.TabIndex = 2;
-            this.pg_recuperar.Text = "Recuperar";
+            this.pg_cadasro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
+            this.pg_cadasro.Controls.Add(this.lbl_entrar);
+            this.pg_cadasro.Controls.Add(this.btn_cadastrar);
+            this.pg_cadasro.Controls.Add(this.label6);
+            this.pg_cadasro.Controls.Add(this.label7);
+            this.pg_cadasro.Controls.Add(this.label8);
+            this.pg_cadasro.Controls.Add(this.label9);
+            this.pg_cadasro.Controls.Add(this.label10);
+            this.pg_cadasro.Controls.Add(this.txt_senhaNEW);
+            this.pg_cadasro.Controls.Add(this.txt_userNEW);
+            this.pg_cadasro.Location = new System.Drawing.Point(4, 4);
+            this.pg_cadasro.Name = "pg_cadasro";
+            this.pg_cadasro.Padding = new System.Windows.Forms.Padding(3);
+            this.pg_cadasro.Size = new System.Drawing.Size(601, 626);
+            this.pg_cadasro.TabIndex = 1;
+            this.pg_cadasro.Text = "Cadastrando";
             // 
             // lbl_entrar
             // 
             this.lbl_entrar.ActiveLinkColor = System.Drawing.Color.Black;
             this.lbl_entrar.AutoSize = true;
             this.lbl_entrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_entrar.DisabledLinkColor = System.Drawing.Color.Black;
             this.lbl_entrar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_entrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.lbl_entrar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.lbl_entrar.Location = new System.Drawing.Point(256, 511);
             this.lbl_entrar.Name = "lbl_entrar";
             this.lbl_entrar.Size = new System.Drawing.Size(59, 23);
-            this.lbl_entrar.TabIndex = 22;
+            this.lbl_entrar.TabIndex = 3;
             this.lbl_entrar.TabStop = true;
             this.lbl_entrar.Text = "Entrar";
             this.lbl_entrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_entrar_LinkClicked);
@@ -430,7 +410,7 @@ namespace S.G_Padaria
             this.btn_cadastrar.AnimationHoverSpeed = 0.07F;
             this.btn_cadastrar.AnimationSpeed = 0.03F;
             this.btn_cadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cadastrar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.btn_cadastrar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.btn_cadastrar.BorderColor = System.Drawing.Color.Black;
             this.btn_cadastrar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_cadastrar.FocusedColor = System.Drawing.Color.Empty;
@@ -448,7 +428,7 @@ namespace S.G_Padaria
             this.btn_cadastrar.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
             this.btn_cadastrar.Radius = 10;
             this.btn_cadastrar.Size = new System.Drawing.Size(160, 53);
-            this.btn_cadastrar.TabIndex = 21;
+            this.btn_cadastrar.TabIndex = 2;
             this.btn_cadastrar.Text = "Cadastrar";
             this.btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -506,7 +486,7 @@ namespace S.G_Padaria
             // 
             this.txt_senhaNEW.BackColor = System.Drawing.Color.White;
             this.txt_senhaNEW.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_senhaNEW.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_senhaNEW.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_senhaNEW.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_senhaNEW.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_senhaNEW.Location = new System.Drawing.Point(129, 294);
@@ -514,14 +494,14 @@ namespace S.G_Padaria
             this.txt_senhaNEW.PasswordChar = '●';
             this.txt_senhaNEW.SelectedText = "";
             this.txt_senhaNEW.Size = new System.Drawing.Size(289, 39);
-            this.txt_senhaNEW.TabIndex = 14;
+            this.txt_senhaNEW.TabIndex = 1;
             this.txt_senhaNEW.UseSystemPasswordChar = true;
             // 
             // txt_userNEW
             // 
             this.txt_userNEW.BackColor = System.Drawing.Color.White;
             this.txt_userNEW.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_userNEW.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_userNEW.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_userNEW.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_userNEW.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_userNEW.Location = new System.Drawing.Point(129, 209);
@@ -529,14 +509,57 @@ namespace S.G_Padaria
             this.txt_userNEW.PasswordChar = '\0';
             this.txt_userNEW.SelectedText = "";
             this.txt_userNEW.Size = new System.Drawing.Size(289, 39);
-            this.txt_userNEW.TabIndex = 15;
+            this.txt_userNEW.TabIndex = 0;
+            // 
+            // pg_recuperar
+            // 
+            this.pg_recuperar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
+            this.pg_recuperar.Controls.Add(this.lbl_voltar);
+            this.pg_recuperar.Controls.Add(this.label13);
+            this.pg_recuperar.Controls.Add(this.btn_alterarSenha);
+            this.pg_recuperar.Controls.Add(this.label11);
+            this.pg_recuperar.Controls.Add(this.label12);
+            this.pg_recuperar.Controls.Add(this.label14);
+            this.pg_recuperar.Controls.Add(this.label15);
+            this.pg_recuperar.Controls.Add(this.txt_senha);
+            this.pg_recuperar.Controls.Add(this.txt_usuario);
+            this.pg_recuperar.Location = new System.Drawing.Point(4, 4);
+            this.pg_recuperar.Name = "pg_recuperar";
+            this.pg_recuperar.Size = new System.Drawing.Size(601, 626);
+            this.pg_recuperar.TabIndex = 2;
+            this.pg_recuperar.Text = "Recuperar";
+            // 
+            // lbl_voltar
+            // 
+            this.lbl_voltar.ActiveLinkColor = System.Drawing.Color.Black;
+            this.lbl_voltar.AutoSize = true;
+            this.lbl_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbl_voltar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_voltar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
+            this.lbl_voltar.Location = new System.Drawing.Point(244, 470);
+            this.lbl_voltar.Name = "lbl_voltar";
+            this.lbl_voltar.Size = new System.Drawing.Size(58, 23);
+            this.lbl_voltar.TabIndex = 3;
+            this.lbl_voltar.TabStop = true;
+            this.lbl_voltar.Text = "Voltar";
+            this.lbl_voltar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_voltar_LinkClicked);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(158, 470);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(91, 21);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Tudo certo?";
             // 
             // btn_alterarSenha
             // 
             this.btn_alterarSenha.AnimationHoverSpeed = 0.07F;
             this.btn_alterarSenha.AnimationSpeed = 0.03F;
             this.btn_alterarSenha.BackColor = System.Drawing.Color.Transparent;
-            this.btn_alterarSenha.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.btn_alterarSenha.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.btn_alterarSenha.BorderColor = System.Drawing.Color.Black;
             this.btn_alterarSenha.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_alterarSenha.FocusedColor = System.Drawing.Color.Empty;
@@ -551,10 +574,10 @@ namespace S.G_Padaria
             this.btn_alterarSenha.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_alterarSenha.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_alterarSenha.OnHoverImage = null;
-            this.btn_alterarSenha.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.btn_alterarSenha.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.btn_alterarSenha.Radius = 10;
             this.btn_alterarSenha.Size = new System.Drawing.Size(160, 53);
-            this.btn_alterarSenha.TabIndex = 21;
+            this.btn_alterarSenha.TabIndex = 2;
             this.btn_alterarSenha.Text = "Alterar";
             this.btn_alterarSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -602,7 +625,7 @@ namespace S.G_Padaria
             // 
             this.txt_senha.BackColor = System.Drawing.Color.White;
             this.txt_senha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_senha.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_senha.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_senha.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_senha.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_senha.Location = new System.Drawing.Point(162, 294);
@@ -610,14 +633,14 @@ namespace S.G_Padaria
             this.txt_senha.PasswordChar = '●';
             this.txt_senha.SelectedText = "";
             this.txt_senha.Size = new System.Drawing.Size(289, 39);
-            this.txt_senha.TabIndex = 14;
+            this.txt_senha.TabIndex = 1;
             this.txt_senha.UseSystemPasswordChar = true;
             // 
             // txt_usuario
             // 
             this.txt_usuario.BackColor = System.Drawing.Color.White;
             this.txt_usuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_usuario.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
+            this.txt_usuario.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(19)))));
             this.txt_usuario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usuario.LineColor = System.Drawing.Color.Gainsboro;
             this.txt_usuario.Location = new System.Drawing.Point(162, 209);
@@ -625,32 +648,15 @@ namespace S.G_Padaria
             this.txt_usuario.PasswordChar = '\0';
             this.txt_usuario.SelectedText = "";
             this.txt_usuario.Size = new System.Drawing.Size(289, 39);
-            this.txt_usuario.TabIndex = 15;
+            this.txt_usuario.TabIndex = 0;
             // 
-            // lbl_voltar
+            // gunaDragControl1
             // 
-            this.lbl_voltar.ActiveLinkColor = System.Drawing.Color.Black;
-            this.lbl_voltar.AutoSize = true;
-            this.lbl_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_voltar.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_voltar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(30)))), ((int)(((byte)(16)))));
-            this.lbl_voltar.Location = new System.Drawing.Point(244, 470);
-            this.lbl_voltar.Name = "lbl_voltar";
-            this.lbl_voltar.Size = new System.Drawing.Size(58, 23);
-            this.lbl_voltar.TabIndex = 24;
-            this.lbl_voltar.TabStop = true;
-            this.lbl_voltar.Text = "Voltar";
-            this.lbl_voltar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_voltar_LinkClicked);
+            this.gunaDragControl1.TargetControl = null;
             // 
-            // label13
+            // gunaDragControl2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(158, 470);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 21);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Tudo certo?";
+            this.gunaDragControl2.TargetControl = this.panel5;
             // 
             // frm_Principal
             // 
