@@ -34,7 +34,7 @@ namespace S.G_Padaria
                             txt_UsuarioADM.Text = "";
                             frm_Admin venha = new frm_Admin();
                             venha.ShowDialog();
-                            
+
                         }
                         else
                         {
@@ -82,5 +82,36 @@ namespace S.G_Padaria
             pg_LoginPaginas.Page = pg_logado;
         }
 
+        private void btn_alterarSenha_Click(object sender, EventArgs e)
+        {
+            if (txt_usuario.Text != "" && txt_senha.Text != "")
+            {
+                if (conex.eUserName(txt_usuario.Text.ToUpper()))
+                {
+                    conex.alterarSenha(txt_usuario.Text.ToUpper(), txt_senha.Text.ToUpper());
+                    txt_usuario.Text = "";
+                    txt_senha.Text = "";
+                    pg_LoginPaginas.Page = pg_logado;
+                }
+                else
+                {
+                    MessageBox.Show("Não existe conta com este nome de usuario");
+                }
+            }
+        }
+
+        private void btn_cadastrar_Click(object sender, EventArgs e)
+        {
+            if(txt_userNEW.Text !="" && txt_senhaNEW.Text != "") { 
+                conex.CadastrarAdm(txt_userNEW.Text.ToUpper(), txt_senhaNEW.Text.ToUpper());
+                txt_userNEW.Text = "";
+                txt_senhaNEW.Text = "";
+                pg_LoginPaginas.Page = pg_logado;
+            }
+            else
+            {
+                MessageBox.Show("Por favor insira as informações sobre o ADM corretamente");
+            }
+        }
     }
 }

@@ -63,17 +63,31 @@ namespace S.G_Padaria
             return cond;
         }
 
-        public void InserirProuto(string prouto, string preco)
+        public void alterarSenha(string usuario, string novaSenha)
         {
+            string query = "Update tb_administrador set senha = '" + novaSenha + "' where nome = '"+usuario+"'";
             MySqlConnection conexao = BuscarConexao();
             conexao.Open();
             MySqlCommand comando = new MySqlCommand();
-            comando.CommandText = "insert into tb_produtos (Produto, Preco) values('" + prouto + "', '" + preco + "')";
+            comando.CommandText = query;
             comando.Connection = conexao;
             comando.ExecuteNonQuery();
             comando.Dispose();
             conexao.Close();
-            MessageBox.Show("Produto inserido com sucesso");
+            MessageBox.Show("Senha Alterada com sucesso");
+        }
+
+        public void CadastrarAdm(string usuario, string senha)
+        {
+            MySqlConnection conexao = BuscarConexao();
+            conexao.Open();
+            MySqlCommand comando = new MySqlCommand();
+            comando.CommandText = "insert into tb_ADMINISTRADOR (NOME, SENHA) values('" + usuario + "', '" + senha + "')";
+            comando.Connection = conexao;
+            comando.ExecuteNonQuery();
+            comando.Dispose();
+            conexao.Close();
+            MessageBox.Show("Novo ADM cadastrado com sucesso");
         }
     }
 }

@@ -85,3 +85,23 @@ C:\Users\Pedro\OneDrive\Área de Trabalho\Padaria\S.G Padaria\S.G Padaria\obj\De
 C:\Users\Pedro\OneDrive\Área de Trabalho\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.csproj.CopyComplete
 C:\Users\Pedro\OneDrive\Área de Trabalho\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.exe
 C:\Users\Pedro\OneDrive\Área de Trabalho\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.pdb
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\S.G Padaria.exe.config
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\S.G Padaria.exe
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\S.G Padaria.pdb
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.exe.config
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.frm_Principal.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.frm_Admin.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.Properties.Resources.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.csproj.GenerateResource.cache
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.csproj.CoreCompileInputs.cache
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.csproj.CopyComplete
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.exe
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.pdb
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G Padaria.csproj.AssemblyReference.cache
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.form_add.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.frm_compra.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\obj\Debug\S.G_Padaria.form_pagamento.resources
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\Vasqueibo\Desktop\Padaria\S.G Padaria\S.G Padaria\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml

@@ -34,8 +34,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\Documents\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
       <HintPath>..\..\..\..\..\HP\Downloads\Pedro Vasco\Grupo\pass is 123 azadeducation_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\Documents\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\..\HP\Downloads\Pedro Vasco\Grupo\pass is 123 azadeducation_Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -47,6 +53,7 @@
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +74,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_add.Designer.cs">
+      <DependentUpon>form_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_compra.Designer.cs">
+      <DependentUpon>frm_compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_pagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_pagamento.Designer.cs">
+      <DependentUpon>form_pagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +102,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_add.resx">
+      <DependentUpon>form_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_compra.resx">
+      <DependentUpon>frm_compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_pagamento.resx">
+      <DependentUpon>form_pagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Admin.resx">
       <DependentUpon>frm_Admin.cs</DependentUpon>
@@ -199,6 +233,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mohamed-hassouna-N4gtuEZ5gWc-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAO-CACETE-UN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAO-CARCACA-UN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAO-FRANCES-UN.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

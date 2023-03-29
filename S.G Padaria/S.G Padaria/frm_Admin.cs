@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
+using MySql.Data.MySqlClient;
 
 namespace S.G_Padaria
 {
@@ -18,6 +20,17 @@ namespace S.G_Padaria
         }
         bool sidebarExpand;
         conexao conex = new conexao();
+        private object pg_vendas;
+        string dia = DateTime.Now.Date.ToString();
+        public static ArrayList tipo_pao = new ArrayList();
+        public static ArrayList preco_pao = new ArrayList();
+        public static ArrayList qtd_pao = new ArrayList();
+        public static ArrayList total_pao = new ArrayList();
+
+        int tipo;
+        double preco;
+        double total = 0;
+
         private void sideBarAnimation_Tick(object sender, EventArgs e)
         {
             //define o minimo e maximo tamanho do sidebar
@@ -49,25 +62,7 @@ namespace S.G_Padaria
             sideBarAnimation.Start();
         }
 
-        private void btn_inserirStock_Click(object sender, EventArgs e)
-        {
-            if (txt_NomeProduto.Text != "" && txt_PrecoProduto.Text != "")
-            {
-                try
-                {
-                    conex.InserirProuto(txt_NomeProduto.Text.ToString(), txt_PrecoProduto.Text.ToString());
-                }
-                catch (Exception err)
-                {
-                    MessageBox.Show(err.Message);
-                    MessageBox.Show("Erro, ao inserir o Produto!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Impossível inserir sem informações corretas");
-            }
-        }
+
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
@@ -81,6 +76,7 @@ namespace S.G_Padaria
         private void btn_faturacao_Click(object sender, EventArgs e)
         {
             pg_Paginas.Page = pg_Faturacao;
+            pg_venda.Page = pg_produtos;
         }
 
         private void btn_lucro_Click(object sender, EventArgs e)
@@ -88,9 +84,46 @@ namespace S.G_Padaria
             pg_Paginas.Page = pg_Lucro;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btn_selecionar1_Click(object sender, EventArgs e)
         {
-            pg_Paginas.Page = pg_Cadastro;
+            frm_compra compra = new frm_compra(1, 120.0);
+            Hide();
+            compra.ShowDialog();
+        }
+
+        private void btn_selecionar2_Click(object sender, EventArgs e)
+        {
+            frm_compra compra = new frm_compra(2, 40.0);
+            Hide();
+            compra.ShowDialog();
+        }
+
+        private void btn_selecionar3_Click(object sender, EventArgs e)
+        {
+            frm_compra compra = new frm_compra(3, 50.0);
+            Hide();
+            compra.ShowDialog();
+        }
+
+        private void pg_Lucro_Enter(object sender, EventArgs e)
+        {
+            MessageBox.Show(dia);
+            conexao conex = new conexao();
+
+            try
+            {
+                string query = "SELECT * FROM TB_PAGAMENTO";
+                DataTable tabela = conex.Buscar(query);
+                dgv_pagamento.DataSource = tabela;
+                string query2 = "SELECT SUM(TOTAL) FROM TB_PAGAMENTO WHERE DATA_DA_VENDA = '" + dia + "';";
+                DataTable tabela2 = conex.Buscar(query2);
+                lbl_venda.Text = tabela.Rows[0]["SUM"].ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Erro ao exibir pagamentos");
+            }
         }
     }
 }

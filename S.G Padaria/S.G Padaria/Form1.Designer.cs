@@ -189,10 +189,10 @@ namespace S.G_Padaria
             this.pg_LoginPaginas.Location = new System.Drawing.Point(0, 0);
             this.pg_LoginPaginas.Multiline = true;
             this.pg_LoginPaginas.Name = "pg_LoginPaginas";
-            this.pg_LoginPaginas.Page = this.pg_logado;
-            this.pg_LoginPaginas.PageIndex = 0;
-            this.pg_LoginPaginas.PageName = "pg_logado";
-            this.pg_LoginPaginas.PageTitle = "Logando";
+            this.pg_LoginPaginas.Page = this.pg_cadasro;
+            this.pg_LoginPaginas.PageIndex = 1;
+            this.pg_LoginPaginas.PageName = "pg_cadasro";
+            this.pg_LoginPaginas.PageTitle = "Cadastrando";
             this.pg_LoginPaginas.SelectedIndex = 0;
             this.pg_LoginPaginas.Size = new System.Drawing.Size(609, 660);
             this.pg_LoginPaginas.TabIndex = 0;
@@ -431,6 +431,7 @@ namespace S.G_Padaria
             this.btn_cadastrar.TabIndex = 2;
             this.btn_cadastrar.Text = "Cadastrar";
             this.btn_cadastrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // label6
             // 
@@ -580,6 +581,7 @@ namespace S.G_Padaria
             this.btn_alterarSenha.TabIndex = 2;
             this.btn_alterarSenha.Text = "Alterar";
             this.btn_alterarSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_alterarSenha.Click += new System.EventHandler(this.btn_alterarSenha_Click);
             // 
             // label11
             // 

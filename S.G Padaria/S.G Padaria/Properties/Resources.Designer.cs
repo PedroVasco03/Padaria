@@ -333,6 +333,36 @@ namespace S.G_Padaria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PAO_CACETE_UN {
+            get {
+                object obj = ResourceManager.GetObject("PAO-CACETE-UN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PAO_CARCACA_UN {
+            get {
+                object obj = ResourceManager.GetObject("PAO-CARCACA-UN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PAO_FRANCES_UN {
+            get {
+                object obj = ResourceManager.GetObject("PAO-FRANCES-UN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap primeira_tela {
             get {
                 object obj = ResourceManager.GetObject("primeira tela", resourceCulture);

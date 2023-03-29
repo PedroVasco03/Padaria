@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\S.G Padaria"
+    "\\S.G Padaria",
+    "\\S.G Padaria\\S.G Padaria"
   ],
-  "SelectedNode": "\\S.G Padaria\\S.G Padaria.sln",
+  "SelectedNode": "\\S.G Padaria\\S.G Padaria\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
